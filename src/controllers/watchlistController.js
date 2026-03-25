@@ -12,7 +12,7 @@ const addToWatchlist = async (req, res) => {
         return res.status(404).json({ error: "Movie not found" });
     }
 
-    // CHeck if already added
+    // Check if already added
     const existingInWatchlist = await prisma.watchlistItem.findUnique({
         where: {
             unique_user_movie: {
