@@ -1,5 +1,5 @@
 import express from "express";
-// Routing
+// Routing CRUD
 const router = express.Router();
 
 router.get("/", (req, res) => {
