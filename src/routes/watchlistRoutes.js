@@ -11,7 +11,7 @@ import { addToWatchlistSchema } from "../validators/watchlistValidators.js";
 const router = express.Router();
 
 router.use(authMiddleware);
-
+// adding API
 router.post("/", addToWatchlist);
 router.post("/", validateRequest(addToWatchlistSchema), addToWatchlist);
 
