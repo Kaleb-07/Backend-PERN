@@ -25,7 +25,7 @@ const server = app.listen(process.env.PORT || 5001, "0.0.0.0", () => {
     console.log(`Server running on PORT ${process.env.PORT}`);
 });
 
-// Handle unhandled promise rejections (e.g., database connection errors)
+// Handle Unhandled promise rejections (e.g., database connection errors)
 process.on("unhandledRejection", (err) => {
     console.error("Unhandled Rejection:", err);
     server.close(async () => {
