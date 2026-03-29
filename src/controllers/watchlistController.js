@@ -105,7 +105,7 @@ const removeFromWatchlist = async (req, res) => {
         return res.status(404).json({ error: "Watchlist item not found" });
     }
 
-    // Ensure only owner can delete
+    // Ensure only owner can delete the data
     if (watchlistItem.userId !== req.user.id) {
         return res
             .status(403)
