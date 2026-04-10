@@ -41,7 +41,7 @@ process.on("uncaughtException", async (err) => {
     process.exit(1);
 });
 
-// Graceful shutdown
+// Graceful Shutdown
 process.on("SIGTERM", async () => {
     console.log("SIGTERM received, shutting down gracefully");
     server.close(async () => {
