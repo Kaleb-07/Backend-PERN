@@ -62,7 +62,7 @@ const updateWatchlistItem = async (req, res) => {
         return res.status(404).json({ error: "Watchlist item not found" });
     }
 
-    // Ensure only owner can update
+    // Ensure only owner can updated
     if (watchlistItem.userId !== req.user.id) {
         return res
             .status(403)
