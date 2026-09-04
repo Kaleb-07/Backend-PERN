@@ -45,9 +45,9 @@ const addToWatchlist = async (req, res) => {
 };
 
 /**
- * Update watchlist item
+ * Update watchlist items
  * Updates status, rating, or notes
- * Ensures only owner can update
+ * Ensures only owners can update
  * Requires protect middleware
  */
 const updateWatchlistItem = async (req, res) => {
