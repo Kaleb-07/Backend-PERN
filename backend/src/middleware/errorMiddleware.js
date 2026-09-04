@@ -2,7 +2,7 @@ import { Prisma } from "@prisma/client";
 
 /**
  * 404 Not Found handler
- * Creates an error for routes that don't exist
+ * Creates an error for routes that don't exists
  */
 const notFound = (req, res, next) => {
     const error = new Error(`Route ${req.originalUrl} not found`);
