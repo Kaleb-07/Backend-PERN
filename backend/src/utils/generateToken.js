@@ -8,7 +8,7 @@ export const generateToken = (userId) => {
     });
 };
 
-// Sends token in HTTP cookies or only for controllers
+// Sends tokens in HTTP cookies or only for controllers
 export const sendToken = (res, token) => {
     res.cookie("jwt", token, {
         httpOnly: true,
