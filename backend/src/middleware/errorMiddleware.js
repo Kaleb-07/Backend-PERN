@@ -47,7 +47,7 @@ const errorHandler = (err, req, res, next) => {
         }
     }
 
-    // Send error response
+    // Send the error response
     res.status(err.statusCode).json({
         status: err.status,
         message: err.message,
