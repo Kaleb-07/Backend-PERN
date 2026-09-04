@@ -32,7 +32,7 @@ const errorHandler = (err, req, res, next) => {
             err.statusCode = 400;
             err.message = `${field} already exists`;
         }
-        // Handle record not found
+        // Handle record not founds
         if (err.code === "P2025") {
             err.statusCode = 404;
             err.message = "Record not found";
