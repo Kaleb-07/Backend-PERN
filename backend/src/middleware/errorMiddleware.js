@@ -39,7 +39,7 @@ const errorHandler = (err, req, res, next) => {
         }
     }
 
-    // Handle Prisma foreign key constraint violations
+    // Handle The Prisma foreign key constraint violations
     if (err instanceof Prisma.PrismaClientKnownRequestError) {
         if (err.code === "P2003") {
             err.statusCode = 400;
