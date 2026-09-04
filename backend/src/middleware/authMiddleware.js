@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { prisma } from "../config/db.js";
 
 // Read the token from the request
-// Check if token is valid
+// Check if token is valid pr not
 export const authMiddleware = async (req, res, next) => {
     let token;
 
