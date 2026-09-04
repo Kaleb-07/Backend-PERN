@@ -29,7 +29,7 @@ const register = async (req, res) => {
         },
     });
 
-    // Generate JWT The Token
+    // Generate JWT Tokens
     const token = generateToken(user.id, res);
 
     res.status(201).json({
